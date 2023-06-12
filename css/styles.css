@@ -1,118 +1,346 @@
-body {
-    background-color: #ffffff;
-    font-family: 'Playfair Display', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    color: #0C3636;
-  }
-  
-  h1, h2, h3, h4, h5 {
-    line-height: 1.5;
-    font-weight: 700;
-  }
-  h1 {
-    font-size: 5.5em;
-  }
-  
-  h2 {
-    font-size: 3.5em;
-  }
-  
-  h3 {
-    font-size: 3em;
-  }
-  h4 {
-    font-size: 2em;
-  }
-  h5 {
-    font-size: 1.5em;
-  }
-  
-p{ 
- font-size: 1.75;
- font-weight: 400;
- line-height: 1.2;
+*body {
+  background-color: #ffffff;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 400; /* Sets the font weight to 300 */
+  line-height: 1.4; /* Sets the line-height to 1.6 * the font-size */
+  color: #0C3636;
+}
+
+h1, h2, h3 {
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+
+img {
+width: 100%;
 }
 
 a {
-    color: #0C3636;
-    text-decoration: none; /* No underlining */
-  }
-  a:hover {
-    color: #0C3636;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  a:focus {
-    color: #0C3636;
-    text-decoration: underline;
-  }
+  color: #0C3636;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #0C3636;
+  background-color: #faff99;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:focus {
+  color: #0C3636;
+  text-decoration: underline;
+}
 
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #e1ea39;
-    color: #0C3636; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 12px 32px;
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
+  background-color: #ebf17c;
+  color: #0C3636; /* needed to override the default link color */
+  font-weight: 400;
+  text-decoration: none;
+  padding: 12px 32px;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+opacity: 0.8;
 }
 
 .primary-button{
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #e1ea39;
-    color: #0C3636; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 12px 32px;
-    
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
+  background-color: #ebf17c;
+  color: #0C3636; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 12px 32px;
+  
 }
 
 
 .secondary-button{
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #ffffff;
-    color: #0C3636; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 12px 32px;
-    border: 1px solid #0C3636;
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ffffff;
+  color: #0C3636; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 12px 32px;
+  border: 1px solid #0C3636;
 }
 
+
 header {
-    background-color: #f3f3f3; 
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-  }
+background-color: #f3f3f3;
+text-align: center;
+padding: 10px;
+position: fixed;
+width: 100%;
+}
 
-  /* Layout styling */
-  .container {
-    padding: 0 15px;
-  }
+.skill-icon {
+width: 100%;
+}
 
-  .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  }
+.skill-image-center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
 
-  #work .row { padding-bottom: 25px; border-bottom: 1px solid #0C3636; }
 
-  .logo {
-    max-width: 250px;
-  }
+/* .tool-icons {
+width: 10%;
+} */
 
-  nav > ul > li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 0 15px;
-  }
+#float-tool-icons div {
+width: auto;
+padding: 10px;
+float: left;
+}
 
-  #hero {
-    background-color: #f3f3f3;
-    padding: 20px 0;
-    display: inline-block;
-    width: 100%;
-  }
+.text-in-box {
+background-color: #ebf17c;
+padding: 20px;
+text-align: center;
+}
 
-  main {
-    padding-top: 100px;
-  }
+/* Layout styling */
 
-  .center {
-    text-align: center;
-  }
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  /* border-bottom: 1px solid #0C3636;  */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  color: #0C3636;
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  color: #0C3636;
+  width: 100%;
+}
+
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 120px;
+}
+
+footer {
+  background-color: #f3f3f3;
+  width: 100%;
+  clear: both;
+ }
+
+.center {
+  text-align: center;
+}
+
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+animation-duration: 4s;
+animation-name: color-change;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+from {transform: translate(0,50px);}
+to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+animation-duration: 30s;
+animation-name: cloud-move;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+from {transform: translate(446px,48px);}
+to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+animation: 40s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: -56px; 
+}
+main {
+  padding-top: 100px;
+}
+
+body {
+  font-size: 18px; /* Sets the font size to 16px */
+}
+
+h1 {
+  font-size: 3em;
+}
+
+/* .col-md-4 {
+  width: 33.33%;
+} */
+
+ .col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 20px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.skill-icon {
+  width: 40%;
+}
+
+.tool-icons {
+  width: 50%;
+}
+
+
+}
+
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+nav {
+  margin-top: -62px; 
+}
+
+body {
+  font-size: 22px; /* Sets the font size to 16px */
+}
+
+h1 {
+  font-size: 3em;
+}
+
+/* .col-lg-4 {
+  width: 33.33%;
+} */
+
+/* .col-lg-6 {
+  width: 50%;
+} */
+
+.col-lg-7 {
+  width: 58.33%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* When I apply this code the formatting gets weird */
+/* .col-md-5{
+  width: 41.66%;
+} */
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+nav {
+  margin-top: -64px;
+}
+
+body {
+  font-size: 24px; /* Sets the font size to 16px */
+}
+
+}
+
+
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+nav {
+  margin-top: -64px;
+}
+
+body {
+  font-size: 28px; /* Sets the font size to 16px */
+}
+
+}
