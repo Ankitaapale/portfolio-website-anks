@@ -10,6 +10,7 @@
 h1, h2, h3 {
   line-height: 1.5;
 }
+
 h1 {
   font-size: 2em;
   font-weight: 700;
@@ -34,11 +35,12 @@ a {
   color: #0C3636;
   text-decoration: none; /* No underlining */
 }
+
 a:hover {
   color: #0C3636;
-  background-color: #faff99;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
+
 a:focus {
   color: #0C3636;
   text-decoration: underline;
@@ -84,26 +86,27 @@ position: fixed;
 width: 100%;
 }
 
-.skill-icon {
+/* .skill-icon {
 width: 100%;
-}
+} */
 
-.skill-image-center {
+/* .skill-image-center {
 display: block;
 margin-left: auto;
 margin-right: auto;
 width: 50%;
-}
-
-/* .tool-icons {
-width: 10%;
 } */
 
-#float-tool-icons div {
+
+/* #float-tool-icons div {
 width: auto;
 padding: 10px;
 float: left;
-}
+} */
+
+/* .tool-icons {
+  width: 50px;
+} */
 
 .text-in-box {
 background-color: #ebf17c;
@@ -155,6 +158,12 @@ nav > ul > li > a:hover {
   width: 100%;
 }
 
+.navtoggle {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -178,13 +187,14 @@ nav > ul > li > a:hover {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #0C3636;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -203,7 +213,8 @@ footer {
   background-color: #f3f3f3;
   width: 100%;
   clear: both;
- }
+  padding: 20px;
+}
 
 .center {
   text-align: center;
@@ -263,7 +274,7 @@ header {
 nav {
   width: auto;
   float: right;
-  margin-top: -32px; 
+  /* margin-top: -32px;  */
 }
 
 .navtoggle li:not(:last-child) {
@@ -321,9 +332,9 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
-nav {
+/* nav {
   margin-top: -56px; 
-}
+} */
 
 nav > ul {
   margin: 1em 0;
@@ -373,9 +384,9 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 
-nav {
+/* nav {
   margin-top: -54px; 
-}
+} */
 
 body {
   font-size: 24px; /* Sets the font size to 16px */
@@ -389,9 +400,10 @@ body {
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
-nav {
+
+/* nav {
   margin-top: -64px; 
-}
+} */
 
 body {
   font-size: 28px; /* Sets the font size to 16px */
