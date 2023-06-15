@@ -155,7 +155,7 @@ nav > ul > li > a:hover {
   /* text-transform: uppercase; */
   font-weight: 700;
   color: #0C3636;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .navtoggle {
