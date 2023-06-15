@@ -362,10 +362,6 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 
-/* nav {
-  margin-top: -54px; 
-} */
-
 body {
   font-size: 24px; /* Sets the font size to 16px */
 }
@@ -378,10 +374,6 @@ body {
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
-
-/* nav {
-  margin-top: -64px; 
-} */
 
 body {
   font-size: 28px; /* Sets the font size to 16px */
